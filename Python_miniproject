@@ -1,5 +1,5 @@
 #Miniproject
-# 1.Guess the Number:
+
 import random
 import string
 
