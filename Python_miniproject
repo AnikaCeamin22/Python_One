@@ -1,0 +1,27 @@
+#Miniproject
+# 1.Guess the Number:
+import random
+import string
+
+ran=random.randint(1,9)
+while True:
+    num=int(input("Guess the number or Quite(0): "))
+    if(num==0):
+        print("Game Over")
+        break
+    elif(num==ran):
+        print("Correct")
+        break
+    elif(num>ran):
+        print("Big Num than target")
+    else:
+        print("Small Num than target")
+
+#2.Random Password Generator:
+all=string.ascii_letters+string.digits+string.punctuation
+password=""
+len=12
+for i in range(12) :
+    rad=random.choice(all)
+    password+=rad
+print("Generated Password = " ,password)
